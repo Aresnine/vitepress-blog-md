@@ -4,36 +4,32 @@ on:
   push:
     branches: 
      - master
-
-
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+   build-and-deploy:
     runs-on: ubuntu-latest
-
-     # 具体的执行步骤
+    strategy:
+      matrix:
+        node: ['lts/fermium']
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout
         uses: actions/checkout@main
-
-     # 使用的node版本   
+        with:
+          ref: 'master'
+          persist-credentials: false
+          fetch-depth: 0
+        env:
+          TZ: Asia/Shanghai
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@main
         with:
           node-version:  ${{ matrix.node }}
-      
-		# 执行安装
       - name: Install dependencies
-        run: pnpm i
-    
-    # 执行打包
-      - name: Build VuePress
-        run: pnpm docs:build
-      
-    # 执行部署
+        run: npm install
+      - name: Build VitePress
+        run: npm run docs:build
       - name: Deploy to Pages
+        env:
+         TZ: Asia/Shanghai
         run: |
           cd docs/.vitepress/dist
           git init
