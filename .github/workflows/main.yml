@@ -23,7 +23,7 @@ jobs:
         with:
           node-version:  ${{ matrix.node }}
       - name: Install pnpm
-        run: npm install pnpm
+        run: npm install pnpm -g
       - name: Install dependencies
         run: pnpm install
       - name: Build VitePress
