@@ -23,7 +23,7 @@ jobs:
         with:
           node-version:  ${{ matrix.node }}
       - name: Install dependencies
-        run: ppm i
+        run: pnpm i
       - name: Build VitePress
         run: pnpm run docs:build
       - name: Deploy to Pages
