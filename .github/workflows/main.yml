@@ -22,12 +22,10 @@ jobs:
         uses: actions/setup-node@main
         with:
           node-version:  ${{ matrix.node }}
-      - name: Install pnpm
-        run: npm i pnpm
       - name: Install dependencies
-        run: pnpm i
+        run: npm install
       - name: Build VitePress
-        run: pnpm run docs:build
+        run: npm run docs:build
       - name: Deploy to Pages
         env:
          TZ: Asia/Shanghai
