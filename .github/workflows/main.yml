@@ -38,5 +38,5 @@ jobs:
           git config user.email "${{ secrets.GIT_EMAIL }}"
           git add .
           git commit -m 'Deploying to gh-pages from @ $GITHUB_SHA in $(date +"%Y年%m月%d日 %T %Z")'
-          git push -f --set-upstream   https://Aresnine:${{ secrets.ACCESS_TOKEN }}@github.com/Aresnine/Aresnine.github.io.git  master
+          git push -f --set-upstream   https://Aresnine:${{ secrets.ACCESS_TOKEN }}@github.com/Aresnine/Aresnine.github.io.git
           cd -
