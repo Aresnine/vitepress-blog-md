@@ -35,7 +35,7 @@ jobs:
           cd docs/.vitepress/dist
           git init
           git config user.name "Aresnine"
-          git config user.email "${{ secrets.GIT_EMAIL }}"
+          git config user.email "763555000@qq.com"
           git add .
           git commit -m 'Deploying to gh-pages from @ $GITHUB_SHA in $(date +"%Y年%m月%d日 %T %Z")'
          
