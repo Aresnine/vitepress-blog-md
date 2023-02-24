@@ -22,6 +22,8 @@ jobs:
         uses: actions/setup-node@main
         with:
           node-version:  ${{ matrix.node }}
+      - name: Install pnpm
+        run: npm i pnpm
       - name: Install dependencies
         run: pnpm i
       - name: Build VitePress
