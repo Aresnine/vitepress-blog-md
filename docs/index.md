@@ -15,7 +15,9 @@ hero:
     - theme: alt
       text: View on Gitee
       link: https://gitee.com
-
+    - theme: demo
+      text: 第一篇文章
+      link: /technology/blog
 features:
   - icon: ⚡️
     title: 这是一个闪电图标
@@ -42,3 +44,4 @@ features:
 - 🌍 I18n ready
 - 🚘 CI/CD with GithubActions
 
+最爱老婆了
