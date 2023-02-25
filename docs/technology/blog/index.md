@@ -8,19 +8,9 @@
 
 
 
-> 目标架构
-
-
-
-![image-20230225215937495](assets/image-20230225215937495.png)
-
-> 阶段一
-
-![image-20230225235534280](assets/image-20230225235534280.png)
-
 > 现有架构模式
 
-![image-20230226002010615](assets/image-20230226002010615.png)
+![image-20230226005323562](assets/image-20230226005323562.png)
 
 上面设置的仓库，和下面的进行对应的配置，记住名字
 
@@ -75,8 +65,8 @@ jobs:
           git commit -m 'Deploying to gh-pages from @ $GITHUB_SHA in $(date +"%Y年%m月%d日 %T %Z")'
          
           git push -f https://Aresnine:${{secrets.ACCESS_TOKEN }}@github.com/Aresnine/Aresnine.github.io.git master:master
+          git push -f https://Aresnine:${{secrets.GITEE_ACCESS_TOKEN }}@gitee.com/Aresnine/blogdist.git master:master
           cd -
-
 ```
 
 ## 个人网站
@@ -148,9 +138,7 @@ fi
 
 
 
-## github到gitee代码同步
 
-这里是有镜像仓库的概念就是gitee可以每隔一段时间（最小30分钟）自动同步github的仓库。因为我们想做的是实时的所以这种方式我们果断放弃
 
 
 

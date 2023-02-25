@@ -6,7 +6,7 @@ hero:
   text: 随便写点啥.
   tagline: 帅气又迷人的小月
   image:
-    src: ./logo.png
+    src: /logo.png
     alt: logo
   actions:
     - theme: brand
