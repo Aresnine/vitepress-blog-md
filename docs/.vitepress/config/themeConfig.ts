@@ -17,12 +17,14 @@ const sidebar = {
 // 主题的整体配置
 const themeConfig:object = {
     nav: [
-        {text: 'vue🐴',link: '/vue3/index'},
-        {text: '技术总结',link: '/技术总结/index'},
+        {text: 'vue🐴',link: '/vue3/'},
+        {text: '技术总结',link: '/技术总结/'},
         {text: 'technology',
           items:[
-            {text:'待整理', link:'/technology/待整理/index.md'},
-            {text:'博客搭建', link:'/technology/blog/index.md'},
+            {text:'待整理', link:'/technology/待整理/'},
+            {text:'博客搭建', link:'/technology/blog/'},
+            {text:'vantcli文档', link:'/technology/vantcli/'},
+
           ]
       },
         {text: '组件库', link: '/components/index'}
