@@ -2,31 +2,37 @@
 layout: home
 
 hero:
-  name: Aresnine的博客
-  text: 随便写点啥.
-  tagline: 帅气又迷人的小月
+  name: 行者
+  text: keep running
+  tagline: 昨日之深渊，今日之浅谈！路虽远，行则将至！事虽难，做则可成！
   image:
     src: /logo.png
     alt: logo
   actions:
     - theme: brand
-      text: 快来快来
-      link: /articles/组件库环境搭建
+      text: About Me
+      link: /introduce
     - theme: alt
-      text: View on Gitee
+      text: Blog
+      link: https://caijiuming.com
+    - theme: alt
+      text: Github Blog
+      link: https://aresnine.github.io
+    - theme: alt
+      text: GiteeBlog
       link: https://gitee.com
-    - theme: demo
-      text: 第一篇文章
-      link: /technology/blog
 features:
-  - icon: ⚡️
-    title: 这是一个闪电图标
+  - icon:  🥇
+    title: 河图
     details: wawawa
-  - icon: 🖖
-    title: 这是一个手掌图标
+  - icon:  🥈
+    title: 洛书
     details: good...
-  - icon: 🛠️
-    title: 这是一个修理图标
+  - icon:  🥉
+    title: 龙马
+    details: cocococo
+  - icon:  🏅
+    title: 神龟
     details: cocococo
 ---
 
