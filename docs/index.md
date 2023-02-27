@@ -20,20 +20,20 @@ hero:
       link: https://aresnine.github.io
     - theme: alt
       text: GiteeBlog
-      link: https://gitee.com
+      link: https://aresnine.gitee.io
 features:
   - icon:  🥇
     title: 河图
-    details: wawawa
+    details: 春
   - icon:  🥈
     title: 洛书
-    details: good...
+    details: 夏
   - icon:  🥉
     title: 龙马
-    details: cocococo
+    details: 秋
   - icon:  🏅
     title: 神龟
-    details: cocococo
+    details: 冬
 ---
 
 
