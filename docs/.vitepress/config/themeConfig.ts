@@ -23,6 +23,7 @@ const themeConfig:object = {
         {text: 'technology',
           items:[
             {text:'待整理', link:'/technology/待整理/'},
+            {text:'typescript', link:'/technology/typescript/'},
             {text:'博客搭建', link:'/technology/blog/'},
             {text:'vantcli文档', link:'/technology/vantcli/'},
 
