@@ -18,6 +18,7 @@ const sidebar = {
 const themeConfig:object = {
     nav: [
         {text: 'vue🐴',link: '/vue3/'},
+        {text: '每日任务',link: '/每日任务/'},
         {text: '技术总结',link: '/技术总结/'},
         {text: 'technology',
           items:[
