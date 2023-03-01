@@ -12,5 +12,22 @@ const config = {
       md.use(demoBlockPlugin)
     },
   },
+  build: {
+    manifest: false,
+    outDir: 'dist',
+    assetsDir: 'assets',
+    rollupOptions: {
+      output: {
+      // 重点在这里哦
+        // entryFileNames: `assets/[name].${timestamp}.js`,
+        // chunkFileNames: `assets/[name].${timestamp}.js`,
+        // assetFileNames: `assets/[name].${timestamp}.[ext]`
+        entryFileNames: `assets/[name].js`,
+        chunkFileNames: `assets/[name].js`,
+        assetFileNames: `assets/[name].[ext]`,
+      }
+    }
+  },
+
 }
 export default config
