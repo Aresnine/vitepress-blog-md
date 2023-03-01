@@ -6,7 +6,7 @@ hero:
   text: keep running
   tagline: 昨日之深渊，今日之浅谈！路虽远，行则将至！事虽难，做则可成！
   image:
-    src: /logo.png
+    src: /logo01.jpg
     alt: logo
   actions:
     - theme: brand
