@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: 行者
+  name: 行者222
   text: keep running
   tagline: 昨日之深渊，今日之浅谈！路虽远，行则将至！事虽难，做则可成！
   image:
