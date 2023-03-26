@@ -43,11 +43,13 @@ body {
 
 ## 2、git报PRC或者网络如error:PRC failed
 
+```
+
 1.  使用"git config --list"查看"http.postBuffer"参数的目前值，如果没有设置，默认值是1兆，确认目前值确实较小。 
 2.  使用"git config --global http.postBuffer <xxx>"其中xxx单位为Byte，比如设置524288000（512MB） 
 3.  重新运行git远程命令，命令可以成功 
 
-
+```
 
 ## 3、全球低代码平台
 
