@@ -17,6 +17,7 @@ const sidebar = {
 // 主题的整体配置
 const themeConfig:object = {
     nav: [
+        {text: 'vitePress',link:'/vitepress/'},
         {text: '网站搭建',link:'/www/'},
         {text: 'vue🐴',link: '/vue3/'},
         {text: '每日任务',link: '/每日任务/'},
