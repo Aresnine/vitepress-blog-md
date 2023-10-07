@@ -1,6 +1,5 @@
 # TypeScript
 
-> 仓库 taiji_platform
 
 ## 关于TypeScript的一些讨论
 
